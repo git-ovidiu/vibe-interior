@@ -1,6 +1,6 @@
 const nextConfig = {
 	images: {
-		domains: ['images.unsplash.com'], // Add the domain of your images here
+		domains: ['images.unsplash.com', 'res.cloudinary.com'],
 	},
 }
 

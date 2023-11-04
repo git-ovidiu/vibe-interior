@@ -4,12 +4,13 @@ import HeaderCard from "@/app/Molecules/header-card/header-card"
 import Icon from "@/app/Atoms/icon/icon"
 import OrganismHeaderCards from "@/app/Organisms/o-header-cards/o-header-cards"
 import Navbar from "@/app/Organisms/navbar/navbar"
+import Homepage from "@/app/Templates/Homepage/homepage"
+import DarkModeButton from "@/app/utils/Dark-Mode/dark-mode"
 
 export default function Home() {
 	return (
 			<>
-				<Navbar/>
-				<OrganismHeaderCards></OrganismHeaderCards>
+				<Homepage></Homepage>
 			</>
 
 		// <main className={styles.main}>
