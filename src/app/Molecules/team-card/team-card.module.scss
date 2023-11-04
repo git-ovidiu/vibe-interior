@@ -1,0 +1,24 @@
+@use '../../../styles/main.module' as *;
+
+
+.m-team-card {
+  position: relative;
+  @include flex(column, flex-start, flex-start);
+  gap: 24px;
+
+  picture {
+	position: relative;
+	width: 100%;
+	padding-bottom: 448px;
+
+	img{
+	  border-radius: 12px;
+	}
+  }
+
+  .content {
+  	@include flex(column, flex-start, flex-start);
+	gap: 10px;
+
+  }
+}

@@ -8,10 +8,27 @@ import DarkModeButton from "@/app/utils/Dark-Mode/dark-mode"
 import TitleBehind from "@/app/Organisms/title-behind-organism/title-behind"
 import Label from "@/app/Atoms/label/label"
 import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
+import TeamCard from "@/app/Molecules/team-card/team-card"
 
 export default function Home() {
 	return (
 			<>
+				<div className="container">
+					<div className="row">
+						<div className="col-12 col-md-4">
+							<TeamCard imageSrc={'https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png'} title={'Lydia Passaquindici'} divider description={'owner'} />
+
+						</div>
+						<div className="col-12 col-md-4">
+							<TeamCard imageSrc={'https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png'} title={'Lydia Passaquindici'} divider description={'owner'} />
+
+						</div>
+						<div className="col-12 col-md-4">
+							<TeamCard imageSrc={'https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png'} title={'Lydia Passaquindici'} divider description={'owner'} />
+
+						</div>
+					</div>
+				</div>
 				<Label text={'Specialists'} icon={<CustomIcon name={'circle'} color={'#FFA500'}/> }/>
 				<Homepage></Homepage>
 				<TitleBehind>
