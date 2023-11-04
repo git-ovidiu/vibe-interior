@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./header-card.module.scss";
 import Image from "next/image";
-import Icon from "@/app/Atoms/icon/icon"
+import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
 
 
 interface HeaderCardProps {
@@ -18,7 +18,7 @@ const HeaderCard: React.FC<HeaderCardProps> = ({dividerName, iconColor, iconName
 	return (
 		<div className={styles["m-header-card"]}>
 				<div className={styles["icon"]}>
-					<Icon color={iconColor} name={iconName} />
+					<CustomIcon color={iconColor} name={iconName} />
 				</div>
 			{title &&
 			<div className={styles["title"]}>
@@ -27,7 +27,7 @@ const HeaderCard: React.FC<HeaderCardProps> = ({dividerName, iconColor, iconName
 			}
 			{divider && (
 				<div className={styles["divider"]}>
-					<Icon name={dividerName} />
+					<CustomIcon name={dividerName} />
 				</div>
 			)}
 			<div className={styles["description"]}>

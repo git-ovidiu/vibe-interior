@@ -1,7 +1,6 @@
 import Image from "next/image"
 import styles from "./page.module.scss"
 import HeaderCard from "@/app/Molecules/header-card/header-card"
-import Icon from "@/app/Atoms/icon/icon"
 import OrganismHeaderCards from "@/app/Organisms/o-header-cards/o-header-cards"
 import Navbar from "@/app/Organisms/navbar/navbar"
 import Homepage from "@/app/Templates/Homepage/homepage"

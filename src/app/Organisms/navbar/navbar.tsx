@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./navbar.module.scss";
-import Icon from "@/app/Atoms/icon/icon"
 import Link from "next/link"
 import DarkModeButton from "@/app/utils/Dark-Mode/dark-mode"
+import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
 
 export default function Navbar() {
 	return (
 		<div className="container-fluid"	>
 			<section className={styles["navbar"]}>
 				<div className="logo">
-					<Icon name={"logo"} color={"white"}/>
+					<CustomIcon name={"logo"} color={"white"}/>
 				</div>
 
 				<div className={styles["links"]}>
