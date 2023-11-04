@@ -5,11 +5,18 @@ import OrganismHeaderCards from "@/app/Organisms/o-header-cards/o-header-cards"
 import Navbar from "@/app/Organisms/navbar/navbar"
 import Homepage from "@/app/Templates/Homepage/homepage"
 import DarkModeButton from "@/app/utils/Dark-Mode/dark-mode"
+import TitleBehind from "@/app/Organisms/title-behind-organism/title-behind"
+import Label from "@/app/Atoms/label/label"
+import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
 
 export default function Home() {
 	return (
 			<>
+				<Label text={'Specialists'} icon={<CustomIcon name={'circle'} color={'#FFA500'}/> }/>
 				<Homepage></Homepage>
+				<TitleBehind>
+					haida
+				</TitleBehind>
 			</>
 
 		// <main className={styles.main}>

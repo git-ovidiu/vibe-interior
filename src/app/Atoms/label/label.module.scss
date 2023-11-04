@@ -1,0 +1,13 @@
+@use '../../../styles/main.module' as *;
+
+.a-label{
+  @include flex(row, flex-start, center);
+  gap: 12px;
+
+  .text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+  }
+
+}

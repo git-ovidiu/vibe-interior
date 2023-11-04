@@ -46,6 +46,13 @@ body {
     color: var(--text-color-light);
 }
 
+[data-theme="dark"] span {
+    --background: black;
+    --foreground: transparent;
+    color: transparent;
+    --text-color: var(--text-color-dark);
+}
+
 [data-theme="light"] .dark-mode-button {
     color: var(--text-color-light);
 }

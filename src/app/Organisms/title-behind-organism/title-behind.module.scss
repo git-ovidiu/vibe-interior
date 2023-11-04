@@ -1,0 +1,21 @@
+@use '../../../styles/main.module' as *;
+
+.o-title-behind{
+  @include flex(row, center, center);
+  position: relative;
+  height: 300px;
+  background: black;
+  //color: white;
+
+  span{
+    font-family: Avenir; //TODO de investigat de ce nu merge INTER aici
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 363px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    border: none;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.15);
+  }
+}
