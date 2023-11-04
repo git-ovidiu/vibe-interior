@@ -64,7 +64,9 @@ const icons: { [key: string]: JSX.Element } = {
 
 const Icon: React.FC<IconProps> = ({ color, name }) => {
 	return (
-		<>{React.cloneElement(icons[name], { fill: color })}</>
+		<>
+			{React.isValidElement(icons[name]) && React.cloneElement(icons[name] as React.ReactElement, { fill: color })}
+		</>
 	);
 };
 
