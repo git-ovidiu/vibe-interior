@@ -1,20 +1,17 @@
-.m-header-card{
-  border: 2px solid red;
-  height: 100%;
+@use '../../../styles/main.module' as *;
 
-  .icon{
-	border: 2px solid blue;
-	max-height: 60px;
-	height: 100%;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
+.m-header-card {
+  height: 100%;
+  @include flex(column, flex-start, flex-start);
+  gap: 15px;
+
+  .icon {
+	height: 60px;
+	width: 100%;
+	@include flex(row, flex-start, flex-end);
   }
 
-  .divider{
-	border: 2px solid green;
-	align-items: center;
-	display: flex;
-	justify-content: flex-start;
+  .divider {
+	@include flex(row, flex-start, center);
   }
 }

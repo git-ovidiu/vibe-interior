@@ -22,7 +22,7 @@ const HeaderCard: React.FC<HeaderCardProps> = ({dividerName, iconColor, iconName
 				</div>
 			{title &&
 			<div className={styles["title"]}>
-				<h1>{title}</h1>
+				<h3>{title}</h3>
 			</div>
 			}
 			{divider && (

@@ -1,0 +1,23 @@
+@use '../../../styles/main.module' as *;
+
+.navbar {
+  @include flex(column, space-between, center);
+  width: 100%;
+  gap: 30px;
+
+  .links {
+	@include flex(column, center, center);
+	gap: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+	@include flex(row, space-between, center);
+
+	.links {
+	  @include flex(row, center, center);
+	  gap: 51px;
+	}
+  }
+}
