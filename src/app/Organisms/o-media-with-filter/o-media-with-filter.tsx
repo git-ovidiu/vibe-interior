@@ -1,9 +1,6 @@
 import React, {ReactNode} from "react";
 import styles from "./o-media-with-filter.module.scss";
 
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-
-
 export interface OrganismMediaWithFilterOptions {
 	image?: ReactNode;
 	descriptionBigger: string;
@@ -32,11 +29,7 @@ export default function OrganismMediaWithFilter({
 					<div className="col-12 col-md-5">
 						<div className={styles["media"]}>
 							<div className={styles["image"]}>
-								{/*{image}*/}
-								<ReactCompareSlider
-									itemOne={<ReactCompareSliderImage src="https://fakeimg.pl/600x400" srcSet="https://fakeimg.pl/600x400/e82121/969696" alt="Image one" />}
-									itemTwo={<ReactCompareSliderImage src="https://fakeimg.pl/600x400/e82121/969696" srcSet="https://fakeimg.pl/600x400/e82121/969696" alt="Image two" />}
-								/>
+								{image}
 							</div>
 						</div>
 					</div>
