@@ -54,6 +54,14 @@ body {
     --text-color: var(--text-color-dark);
 }
 
+[data-theme="light"] span {
+    --background: rgba(20, 20, 20, 1);
+    --foreground: transparent;
+    color: transparent;
+    border: none;
+    -webkit-text-stroke: 1px rgba(20, 20, 20, 0.15)!important;
+}
+
 [data-theme="light"] .dark-mode-button {
     color: var(--text-color-light);
 }

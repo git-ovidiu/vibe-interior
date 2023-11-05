@@ -1,0 +1,15 @@
+@use '../../../styles/main.module' as *;
+
+.o-team-cards {
+
+  .main-title {
+	@include flex(column, center, flex-start);
+	gap: 32px;
+	margin-bottom: 51px;
+  }
+
+  .row > * {
+	padding-right: calc(var(--bs-gutter-x) * 0.1);
+	padding-left: calc(var(--bs-gutter-x) * 0.1);
+  }
+}
