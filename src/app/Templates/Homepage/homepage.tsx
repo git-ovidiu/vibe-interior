@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import BackgroundTemplate from "@/app/Templates/background-template"
 import Navbar from "@/app/Organisms/navbar/navbar"
@@ -14,10 +16,13 @@ import OrganismMediaWithFilter from "@/app/Organisms/o-media-with-filter/o-media
 import SmallContactCard from "@/app/Molecules/small-contact-card/small-contact-card"
 import CustomLink from "@/app/Atoms/buttons/custom-link/custom-link"
 import OrganismContactBanner from "@/app/Organisms/o-contact-banner/o-contact-banner"
+import Footer from "@/app/Organisms/footer/footer"
+
 
 export default function Homepage() {
 	return (
 		<>
+
 			<BackgroundTemplate
 				cornerImage={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699123391/demo_evtkkz.png"}
 			>
@@ -158,7 +163,7 @@ export default function Homepage() {
 					></OrganismContactBanner>
 				</>
 			</TitleBehind>
-
+			<Footer/>
 		</>
 	)
 }

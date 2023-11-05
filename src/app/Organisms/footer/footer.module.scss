@@ -1,0 +1,36 @@
+@use '../../../styles/main.module' as *;
+
+.footer {
+  @include flex(column, center, flex-start);
+  padding: 96px 0;
+  gap: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  .navigation-links {
+	@include flex(row, flex-start, center);
+	padding-top: 48px;
+	gap: 51px;
+  }
+
+  .bottom {
+	@include flex(row, flex-start, center);
+	padding-top: 48px;
+
+	.bottom-right {
+	  @include flex(row, space-between, center);
+	  width: 100%;
+
+	  .copyright {
+		@include flex(row, flex-start, center);
+		padding-left: 50px;
+		gap: 64px;
+	  }
+
+	  .social-icons{
+		@include flex(row, center, center);
+		gap: 30px;
+	  }
+	}
+  }
+}
+

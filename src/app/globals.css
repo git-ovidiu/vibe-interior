@@ -69,3 +69,7 @@ body {
 [data-theme="light"] .logo svg {
     fill: rgba(20, 20, 20, 1);
 }
+
+[data-theme="dark"] .logo svg , .social-icons svg {
+    fill: rgba(255, 255, 255, 1);
+}
