@@ -1,0 +1,68 @@
+@use '../../../styles/main.module' as *;
+
+
+.o-media-and-paragraph {
+  padding: 50px 0;
+
+  &:hover{
+	.media{
+	  .image{
+		img{
+		  filter: grayscale(0%);
+		  transition: all 0.5s;
+		}
+	  }
+	}
+  }
+
+  .media {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	.image {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  padding-bottom: 115%;
+
+	  img {
+		border-radius: 12px;
+		filter: grayscale(100%);
+	  }
+	}
+  }
+
+  .label {
+	margin-top: -32px;
+	padding-bottom: 32px;
+  }
+
+  .title {
+	margin-left: -190px;
+	z-index: 2;
+  }
+
+  .descriptions {
+	@include flex(column, center, flex-start);
+	gap: 15px;
+	.description-bigger {
+	  margin-top: 48px;
+
+	  p {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.21;
+	  }
+	}
+
+	.description{
+	  p{
+	  line-height: 1.6;
+	  font-size: 16px;
+	  font-weight: 400;
+	  }
+	}
+  }
+}

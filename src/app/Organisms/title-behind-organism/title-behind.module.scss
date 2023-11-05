@@ -1,9 +1,7 @@
 @use '../../../styles/main.module' as *;
 
 .o-title-behind {
-  //@include flex(column, center, center);
   position: relative;
-  //color: white;
 
   .title {
   overflow: hidden;
@@ -15,13 +13,10 @@
 	  line-height: 363px;
 	  letter-spacing: 0em;
 	  text-align: center;
+	  z-index: -2;
 
 	  border: none;
 	  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
 	}
-  }
-
-  .children {
-	margin-top: -200px;
   }
 }

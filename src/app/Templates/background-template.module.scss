@@ -17,3 +17,14 @@
     }
   }
 }
+
+//TODO delete this
+@media (max-width: 768px) {
+  .background-template{
+    picture{
+      img{
+        display: none;
+      }
+    }
+  }
+}

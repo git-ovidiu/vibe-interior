@@ -10,33 +10,12 @@ import Label from "@/app/Atoms/label/label"
 import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
 import TeamCard from "@/app/Molecules/team-card/team-card"
 import OrganismTeamCards from "@/app/Organisms/o-team-cards/o-team-cards"
+import OrganismMediaAndParagraph from "@/app/Organisms/o-media-and-paragraph/o-media-and-paragraph"
 
 export default function Home() {
 	return (
 		<>
 			<Homepage></Homepage>
-			<TitleBehind behindTitle={"ABOUT"}>
-				<OrganismTeamCards title={<h2>Behind the scenes eget<br/>natoque adipiscing</h2>}>
-							<div className="col-12 col-md-4">
-								<TeamCard
-									imageSrc={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png"}
-									title={"Lydia Passaquindici"} divider description={"owner"}/>
-
-							</div>
-							<div className="col-12 col-md-4">
-								<TeamCard
-									imageSrc={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png"}
-									title={"Lydia Passaquindici"} divider description={"owner"}/>
-
-							</div>
-							<div className="col-12 col-md-4">
-								<TeamCard
-									imageSrc={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699140368/Photo_ceztnt.png"}
-									title={"Lydia Passaquindici"} divider description={"owner"}/>
-
-					</div>
-				</OrganismTeamCards>
-			</TitleBehind>
 		</>
 	)
 }

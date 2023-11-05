@@ -6,7 +6,7 @@ import CustomIcon from "@/app/Atoms/custom-icon/custom-icon"
 
 export default function Navbar() {
 	return (
-		<div className="container-fluid"	>
+		<div className="container"	>
 			<section className={styles["navbar"]}>
 				<div className="logo">
 					<CustomIcon name={"logo"} color={"white"}/>
