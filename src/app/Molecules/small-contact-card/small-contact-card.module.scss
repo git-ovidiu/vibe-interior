@@ -1,0 +1,17 @@
+@use '../../../styles/main.module' as *;
+
+.m-header-card {
+  height: 100%;
+  @include flex(column, flex-start, flex-start);
+  gap: 15px;
+
+  .icon {
+	height: 60px;
+	width: 100%;
+	@include flex(row, flex-start, flex-end);
+  }
+
+  .divider {
+	@include flex(row, flex-start, center);
+  }
+}

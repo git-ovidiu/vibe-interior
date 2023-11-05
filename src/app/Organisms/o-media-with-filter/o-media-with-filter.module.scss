@@ -2,37 +2,57 @@
 
 
 .o-media-with-filter {
-
-  &:hover{
-	.media{
-	  .image{
-		img{
-		  filter: grayscale(0%);
-		  transition: all 0.5s;
-		}
-	  }
-	}
-  }
-
   .media {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+	overflow: hidden;
 
 	.image {
 	  position: relative;
 	  width: 100%;
 	  height: 100%;
 	  padding-bottom: 115%;
+	  overflow: hidden;
 
 	  img {
 		border-radius: 12px;
 		filter: grayscale(100%);
+		transition: all 0.5s;
+	  }
+	}
+
+	.hover-image {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  transition: transform 0.5s ease-in-out;
+	  transform: translateX(80%);
+	  overflow: hidden;
+
+	  img {
+		border-radius: 12px;
+		filter: grayscale(0%);
 	  }
 	}
   }
 
+  &:hover {
+	.media {
+	  .hover-image {
+		transform: translateX(0);
+	  }
+
+	  .image {
+		img {
+		  filter: grayscale(0%);
+		}
+	  }
+	}
+  }
 
   .descriptions {
 	@include flex(column, center, flex-start);

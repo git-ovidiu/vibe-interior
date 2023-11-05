@@ -1,0 +1,29 @@
+@use '../../../../styles/main.module' as *;
+
+.a-custom-link {
+
+  .regular {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.21;
+  }
+
+  .regular{
+  }
+
+  .complex-link {
+	@include flex(column, flex-start, flex-start);
+	gap: 15px;
+  }
+
+  .extra-text {
+	@include flex(row, flex-start, center);
+	gap: 10px;
+
+	p {
+	  font-size: 14px;
+	  font-weight: 600;
+	  line-height: 1.7;
+	}
+  }
+}

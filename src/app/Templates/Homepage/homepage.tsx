@@ -11,6 +11,9 @@ import Image from "next/image"
 import OrganismTeamCards from "@/app/Organisms/o-team-cards/o-team-cards"
 import TeamCard from "@/app/Molecules/team-card/team-card"
 import OrganismMediaWithFilter from "@/app/Organisms/o-media-with-filter/o-media-with-filter"
+import SmallContactCard from "@/app/Molecules/small-contact-card/small-contact-card"
+import CustomLink from "@/app/Atoms/buttons/custom-link/custom-link"
+import OrganismContactBanner from "@/app/Organisms/o-contact-banner/o-contact-banner"
 
 export default function Homepage() {
 	return (
@@ -72,8 +75,12 @@ export default function Homepage() {
 					/>
 				</TitleBehind>
 				<OrganismMediaWithFilter
-					image={<Image src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699173194/img_dxaugh.png"}
-								  alt={"Placeholder"} fill objectFit={"cover"}/>}
+					image1={<Image
+						src={"https://res.cloudinary.com/dfddk8jjr/image/upload/e_grayscale/v1699173194/img_dxaugh.png"}
+						alt={"Placeholder"} fill objectFit={"cover"}/>}
+
+					image2={<Image src={"https://res.cloudinary.com/dfddk8jjr/image/upload/v1699173194/img_dxaugh.png"}
+								   alt={"Placeholder"} fill objectFit={"cover"}/>}
 					descriptionBigger={"Potenti lobortis interdum vulputate facilisis tellus a faucibus quis volutpat. Morbi justo nunc mollis lacus in morbi est velit ornare. Lacus nec."}
 					description={"Lorem ipsum dolor sit amet consectetur. Erat faucibus curabitur amet malesuada elit proin porta. Amet faucibus libero neque quam nisl euismod nisl viverra ut. Augue vulputate nunc ullamcorper malesuada. Fermentum accumsan odio proin nec. Proin a fames nec pharetra velit. Condimentum convallis morbi arcu sed."}
 				/>
@@ -101,6 +108,57 @@ export default function Homepage() {
 					</div>
 				</OrganismTeamCards>
 			</TitleBehind>
+
+			<TitleBehind marginTop={"-370px"} behindTitle={"CONTACT"}>
+				<>
+					<OrganismContactBanner
+						label={
+							<Label text={"Contact us"} icon={<CustomIcon name={"circle"} color={"rgba(255, 165, 0, 1)"}/>}/>
+						}
+						title={"Haide să facem echipă spre casa visurilor tale!"}
+						description={<p>Have a project or just want to say hello? We <br/> would love to hear from you</p>}
+						contactCard={
+							<>
+								<div className={"col-12 col-md-4"}>
+									<SmallContactCard
+										title={"Scrie-ne despre proiectul tău"}
+										divider
+										description={"Iar noi iți vom răspunde cu drag"}
+										action={
+											<CustomLink text={"hello@vibe-interior.ro"} underline
+														url={"https://www.google.com"}/>
+										}
+									/>
+								</div>
+								<div className={"col-12 col-md-4"}>
+									<SmallContactCard
+										title={"Ne gasesti și la telefon"}
+										divider
+										description={"In caz că ai întrebari sau vrei să ne cunoaștem"}
+										action={
+											<CustomLink text={"+40 743 043 333"} url={"https://www.google.com"}/>
+										}
+									/>
+								</div>
+								<div className={"col-12 col-md-4"}>
+									<SmallContactCard
+										title={"Adresa"}
+										divider
+										description={"De Luni pâna Vineri între 10:00 - 18:00"}
+										action={
+											<CustomLink text={"Strada Erou Iancu Nicolae, 122"}
+														extraText={"OPEN ON GOOGLE MAPS"}
+														complex
+														url={"https://www.google.com"}/>
+										}
+									/>
+								</div>
+							</>
+						}
+					></OrganismContactBanner>
+				</>
+			</TitleBehind>
+
 		</>
 	)
 }

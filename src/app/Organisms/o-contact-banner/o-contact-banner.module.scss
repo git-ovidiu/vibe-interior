@@ -1,0 +1,23 @@
+@use '../../../styles/main.module' as *;
+
+.o-contact-banner {
+	padding: 87px 0;
+  .label {
+	margin-bottom: 32px;
+  }
+
+  .content {
+	@include flex(column, flex-start, flex-start);
+	gap: 48px;
+
+	.description {
+	  margin-bottom: 48px;
+	  p {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+	  }
+
+	}
+  }
+}
