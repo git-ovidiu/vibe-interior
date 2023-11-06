@@ -6,6 +6,9 @@ import "../styles/bootstrap/css/bootstrap-grid.css";
 const inter = Inter({subsets: ["latin"]})
 import styles from "../styles/main.module.scss";
 import {Providers} from "@/app/utils/providers"
+import Navbar from "@/app/Organisms/navbar/navbar"
+import React from "react"
+import Footer from "@/app/Organisms/footer/footer"
 
 
 export const metadata: Metadata = {
@@ -20,7 +23,9 @@ export default function RootLayout({children}: {
 		<html lang="en">
 		<body className={`${inter.className} ${styles.styleguide}`}>
 		<Providers>
+			<Navbar/>
 			{children}
+			<Footer/>
 		</Providers>
 		</body>
 		</html>

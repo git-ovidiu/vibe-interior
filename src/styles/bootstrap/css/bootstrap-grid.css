@@ -3,6 +3,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -10,17 +11,17 @@
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 10px; /* Adjust the gutter size as needed */
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(min(var(--bs-gutter-x), 20px) * 0.5); /* Limit padding to a maximum of 20px */
+  padding-left: calc(min(var(--bs-gutter-x), 20px) * 0.5); /* Limit padding to a maximum of 20px */
   margin-right: auto;
   margin-left: auto;
 }
 
-ul{
-  margin-left: calc(var(--bs-gutter-x) * 0.5 + 3.7px);
+ul {
+  margin-left: calc(min(var(--bs-gutter-x), 20px) * 0.5 + 3.7px);
 }
 
 @media (min-width: 576px) {
@@ -40,25 +41,17 @@ ul{
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1100px; /* Adjusted to 1100px */
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1100px; /* Adjusted to 1100px */
   }
-}
-:root {
-  --bs-breakpoint-xs: 0;
-  --bs-breakpoint-sm: 576px;
-  --bs-breakpoint-md: 768px;
-  --bs-breakpoint-lg: 992px;
-  --bs-breakpoint-xl: 1200px;
-  --bs-breakpoint-xxl: 1400px;
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 10px; /* Adjust the gutter size as needed */
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -66,15 +59,17 @@ ul{
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+
 .row > * {
   box-sizing: border-box;
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(min(var(--bs-gutter-x), 20px) * 0.5); /* Limit padding to a maximum of 20px */
+  padding-left: calc(min(var(--bs-gutter-x), 20px) * 0.5); /* Limit padding to a maximum of 20px */
   margin-top: var(--bs-gutter-y);
 }
+
 
 .col {
   flex: 1 0 0%;

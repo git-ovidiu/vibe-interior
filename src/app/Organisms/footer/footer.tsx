@@ -21,7 +21,7 @@ export default function Footer() {
 						<div className={styles["navigation-links"]}>
 							<h3>Portofoliu</h3>
 							<h3>About</h3>
-							<h3>Procesul Nostru</h3>
+							<h3 className={styles['custom-navigation-link']}>Procesul Nostru</h3>
 							<h3>Apariții Media</h3>
 							<h3>Contact</h3>
 						</div>

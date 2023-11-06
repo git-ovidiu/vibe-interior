@@ -8,10 +8,12 @@
   padding-top: 32px;
   //max-width: 1320px;
   //margin: 0 auto;
+  z-index: 2;
 
   .links {
 	@include flex(column, center, center);
 	gap: 20px;
+	z-index: 123;
   }
 }
 
